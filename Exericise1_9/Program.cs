@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Ex1_9
+﻿namespace Exericise1_9
 {
     public class Book
     {
