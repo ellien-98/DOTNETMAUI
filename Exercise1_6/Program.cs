@@ -23,13 +23,7 @@ namespace CustomDataTypesApp
         public short ShortProperty { get; set; } = -32768;
         public ushort UShortProperty { get; set; } = 65535;
         
-       
-        
-        
-        
-        
-        
-        public int SumMethod(int x, int y)
+       public int SumMethod(int x, int y)
         {
             return x+y;
         }
@@ -56,7 +50,7 @@ namespace CustomDataTypesApp
             Console.WriteLine($"Float Property --> {dataTypes.FloatProperty} - Represents a single-precision 32-bit floating point.");
             Console.WriteLine($"Double Property --> {dataTypes.DoubleProperty} - Represents a double-precision 64-bit floating point.");
             Console.WriteLine($"Decimal Property --> {dataTypes.DecimalProperty} - Represents a 128-bit precise decimal value, suitable for financial calculations.");
-            int result = dataTypes.SumMethod(2,4);
+            int result = dataTypes.SumMethod(2,4); 
             Console.WriteLine($"Output of SumMethod(2,4):  {result} ");
         }
     }
