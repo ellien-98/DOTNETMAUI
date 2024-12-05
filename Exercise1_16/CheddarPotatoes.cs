@@ -4,9 +4,8 @@ namespace Exercise1_16
     {
         public string FoodTitle => "CheddarPotatoes";
         public int OptionNumber => 2;
-        public override string ToString()
-        {
-            return "Cheddar Potatoes"; // Return only the name you want to display
+        public override string ToString() {
+            return "Cheddar Potatoes"; 
         }
     }
 }
