@@ -6,13 +6,16 @@
             while (true) {
                 try {
                     IFood[] menuOptions = Catalog.GetMenuItems();
+                    
                     Console.WriteLine($"\nPlease select your dish:");
                     for (int i = 0; i < menuOptions.Length; i++) {
                         Console.WriteLine($"Option {i + 1} --> {menuOptions[i]}");
                     }
                     Console.WriteLine($"Press 0 to exit the app\n");
+                    
                     string strChoice = Console.ReadLine();
                     int choice = Convert.ToInt32(strChoice);
+                    
                     if (choice == 0) {
                         Console.WriteLine("Exiting the app");
                         break;
@@ -28,7 +31,8 @@
                     {
                         throw new Exception("Exception---------------");
                     }
-                }catch (OutOfRangeException outOfRangeException) {    
+                }
+                catch (OutOfRangeException outOfRangeException) {    
                     Console.WriteLine($"\n---OutOfRangeException ---\nThe given number must be between 1 and 3\n");
                 }
                 catch (FormatException formatException) {    
