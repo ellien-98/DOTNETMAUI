@@ -2,11 +2,11 @@ namespace Exercise1_16
 {
     public class CheddarPotatoes : IFood
     {
-        public string FoodTitle => "CheddarPotatoes";
+        public string FoodTitle => "Cheddar Potatoes";
         public int OptionNumber => 2;
         public override string ToString()
         {
-            return "Cheddar Potatoes"; // Return only the name you want to display
+            return FoodTitle; 
         }
     }
 }

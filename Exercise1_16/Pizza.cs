@@ -6,7 +6,7 @@ namespace Exercise1_16
         public int OptionNumber => 3;
         public override string ToString()
         {
-            return "Pizza"; // Return only the name you want to display
+            return FoodTitle; 
         }
     }
 }
