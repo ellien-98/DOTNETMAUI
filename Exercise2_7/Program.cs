@@ -13,7 +13,7 @@ namespace Exercise2_7
             {
                 try
                 {
-                    Console.WriteLine("The top 10 movies on IMDB are the following:");
+                    Console.WriteLine("Here are the top 10 movies on IMDb:");
                     int j = 1;
                     foreach (var m in movieList)
                     {
@@ -22,9 +22,9 @@ namespace Exercise2_7
                     }
 
                     Console.WriteLine("\nYou have the following options: " +
-                                      "\nPress 1 to display the top 3 of them." +
-                                      "\nPress 2 to display the worst 3 of them." +
-                                      "\nPress 3 to display all the movies with rating 9 or above." +
+                                      "\nPress 1 to display the top 3 movies." +
+                                      "\nPress 2 to display the worst 3 movies." +
+                                      "\nPress 3 to display all movies with a rating of 9 or above." +
                                       "\nPress 0 to exit the application.");
 
                     string strChoice = Console.ReadLine();
@@ -45,7 +45,7 @@ namespace Exercise2_7
                         var best3Movies = movieList
                             .OrderByDescending(m => m.Rating)
                             .Take(3);
-                        Console.WriteLine("\nThe top 3 of them, based on the rating, are the following:");
+                        Console.WriteLine("\nThe top three rated movies from the list above are: ");
                         int i = 1;
                         foreach (var m in best3Movies)
                         {
@@ -60,7 +60,7 @@ namespace Exercise2_7
                         var worst3Movies = movieList
                             .OrderBy(m => m.Rating)
                             .Take(3);
-                        Console.WriteLine("\nThe worst 3 of them, based on the rating, are the following:");
+                        Console.WriteLine("\nThe three worst-rated movies from the list above are:");
                         int i = 1;
                         foreach (var m in worst3Movies)
                         {
@@ -74,7 +74,7 @@ namespace Exercise2_7
                     {
                         var moreThan9Rating = movieList
                             .Where(m => m.Rating >= 9);
-                        Console.WriteLine("\nThe movies with rating 9 or more:");
+                        Console.WriteLine("\nThe movies with a rating of 9 or higher");
                         int i = 1;
                         foreach (var m in moreThan9Rating)
                         {
