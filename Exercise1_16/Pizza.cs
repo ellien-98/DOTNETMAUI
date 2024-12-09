@@ -4,8 +4,9 @@ namespace Exercise1_16
     {
         public string FoodTitle => "Pizza";
         public int OptionNumber => 3;
-        public override string ToString() {
-            return "Pizza"; 
+        public override string ToString()
+        {
+            return FoodTitle; 
         }
     }
 }
