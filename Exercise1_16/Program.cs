@@ -4,7 +4,7 @@
     {
         static void Main(string[] args) {
             while (true) {
-                try {
+                try {     
                     IFood[] menuOptions = Catalog.GetMenuItems();
                     
                     Console.WriteLine($"\nPlease select your dish:");
